@@ -19,7 +19,6 @@ const NotesClient = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Дебаунсимо значення, а не handler
   const [debouncedSearchQuery] = useDebounce(searchQuery, 500);
 
 
